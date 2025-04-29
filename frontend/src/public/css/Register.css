@@ -1,0 +1,91 @@
+/* Contenedor principal del formulario de registro */
+.register-container {
+  display: flex;
+  flex-direction: column; /* Asegura que todo esté en una columna, TÍTULO arriba */
+  justify-content: flex-start; /* Alinea el formulario desde el principio */
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f9; /* Fondo más suave */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía moderna */
+  padding-top: 50px; /* Espaciado superior para que no toque el borde */
+}
+
+/* Título */
+.register-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 600; /* Fuente más fuerte y destacada */
+  letter-spacing: 0.5px;
+  text-transform: uppercase; /* Título en mayúsculas */
+}
+
+/* Formulario de registro */
+.register-form {
+  background-color: #ffffff; /* Fondo blanco limpio */
+  padding: 80px;
+  border-radius: 12px; /* Bordes más redondeados */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  width: 100%;
+  max-width: 380px; /* Ancho máximo */
+  display: flex;
+  flex-direction: column; /* Coloca los campos de manera vertical */
+  gap: 20px; /* Espaciado entre los campos */
+}
+
+/* Estilo de los campos de entrada (inputs) */
+.register-form .form-input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 18px; /* Espaciado mayor entre campos */
+  border: 1px solid #ddd; /* Borde más suave */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 15px;
+  background-color: #f9f9f9; /* Fondo ligeramente gris */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.register-form .form-input:focus {
+  border-color: #007bff; /* Borde azul cuando el input está enfocado */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Sombra sutil en el foco */
+  outline: none;
+}
+
+/* Estilo para el botón de registro */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Efecto de elevación al hacer hover */
+}
+
+.submit-btn:active {
+  background-color: #003f8d;
+  transform: translateY(0); /* Efecto de pulsación al hacer click */
+}
+
+/* Mensajes de error */
+.error-message {
+  color: #d9534f; /* Rojo más sutil */
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Añadir un pequeño efecto de sombra al pasar el mouse sobre el contenedor */
+.register-form:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9; /* Fondo suave */
+}
+
+/* Contenedor principal */
+.index-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la página */
+h2 {
+  font-size: 2.5rem;
+  color: #4b79a1; /* Color azul suave */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Estado de la actividad */
+p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de los botones */
+.buttons-container {
+  display: flex;
+  flex-direction: row;  /* Cambiar de columna a fila */
+  gap: 20px;            /* Espacio entre los botones */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para los botones */
+.btn {
+  background-color: #4b79a1; /* Azul */
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #365f7d; /* Color más oscuro */
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  background-color: #2c4b63; /* Otro tono para la acción */
+  transform: translateY(2px);
+}

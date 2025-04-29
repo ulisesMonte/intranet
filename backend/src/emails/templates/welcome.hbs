@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>¡Tu sesión de trabajo ha comenzado!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .header {
+      text-align: center;
+      border-bottom: 1px solid #eeeeee;
+      padding-bottom: 20px;
+    }
+    .header img {
+      width: 100px;
+    }
+    .content {
+      padding: 20px 0;
+      color: #333333;
+      line-height: 1.6;
+    }
+    .session-info {
+      background: #f1f1f1;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #888888;
+      padding-top: 20px;
+      border-top: 1px solid #eeeeee;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>¡Se inició tu sesión de trabajo!</h2>
+    </div>
+    <div class="content">
+      <p>¡Hola {{userName}}!</p>
+      <p>Te confirmamos que tu sesión de trabajo ha sido iniciada correctamente.</p>
+
+      <p>Te deseamos una jornada productiva. Cuando finalices tu sesión, recibirás otra notificación de cierre.</p>
+      <p>— El equipo de Consultoria Global</p>
+    </div>
+  
+  </div>
+</body>
+</html>
